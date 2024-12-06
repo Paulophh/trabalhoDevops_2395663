@@ -18,7 +18,7 @@ def test_listar_alunos(client: FlaskClient):
     assert response.status_code == 200
     assert isinstance(response.json, list)
 
-def test_adicionar_aluno(client: FlasClient):
+def test_adicionar_aluno(client: FlaskClient):
     """Testa a rota POST /alunos"""
     new_aluno = {
         "nome": "Lal",
